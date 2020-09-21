@@ -233,6 +233,7 @@ div ul li a:hover::before {
   color: #fff;
   text-align: center;
   font-size: 1.5em;
+  font-family: "ALK Sanet" !important;
 }
 
 .container1 .card .face.face2 {
@@ -325,7 +326,7 @@ div ul li a:hover::before {
   font-family: "BPG Arial" !important;
 }
 .description_heading {
-  font-family: 'ALK Sanet' !important;
+  font-family: "ALK Sanet" !important;
   font-weight: bold !important;
 }
 /* end */
@@ -349,7 +350,7 @@ div ul li a:hover::before {
   font-size: 1.5rem;
 }
 .accordion-section .panel-default .panel-title a:after {
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   font-style: normal;
   font-size: 3rem;
   content: "\f106";
@@ -366,24 +367,23 @@ div ul li a:hover::before {
 
 .collapsed {
   text-decoration: none !important;
-  color:#293467 !important;
+  color: #293467 !important;
 }
 .panel-title a {
   text-decoration: none !important;
-  color:#293467 !important;
-  font-family: 'Raleway', sans-serif !important; 
+  color: #293467 !important;
+  font-family: "Rajdhani", sans-serif !important;
+  font-weight: bold !important;
 }
 a.collapsed::after {
-  color:#AC62D2 !important;
+  color: #ac62d2 !important;
 }
 a::after {
-  color:#AC62D2 !important;
+  color: #ac62d2 !important;
 }
-
 
 /* end */
 
+/* background */
 
-
-/* scrool down button */
 /* end */

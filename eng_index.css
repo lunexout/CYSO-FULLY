@@ -52,8 +52,8 @@ div ul li a:hover::before {
 }
 /* fonts */
 .navigation_names {
-    font-family: 'Nanum Gothic', sans-serif !important;
-    font-weight: bold;
+  font-family: "Nanum Gothic", sans-serif !important;
+  font-weight: bold;
 }
 
 /* background image and movable picture */
@@ -238,6 +238,7 @@ div ul li a:hover::before {
   color: #fff;
   text-align: center;
   font-size: 1.5em;
+  font-family: "Rajdhani", sans-serif;
 }
 
 .container1 .card .face.face2 {
@@ -331,7 +332,7 @@ div ul li a:hover::before {
 }
 .description_heading {
   /* font-family: 'ALK Sanet' !important; */
-  font-family: 'Raleway' !important;
+  font-family: "Raleway" !important;
   font-weight: bold !important;
 }
 /* end */
@@ -355,7 +356,7 @@ div ul li a:hover::before {
   font-size: 1.5rem;
 }
 .accordion-section .panel-default .panel-title a:after {
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   font-style: normal;
   font-size: 3rem;
   content: "\f106";
@@ -372,24 +373,21 @@ div ul li a:hover::before {
 
 .collapsed {
   text-decoration: none !important;
-  color:#293467 !important;
+  color: #293467 !important;
 }
 .panel-title a {
   text-decoration: none !important;
-  color:#293467 !important;
-  font-family: 'Raleway', sans-serif !important; 
+  color: #293467 !important;
+  font-family: "Raleway", sans-serif !important;
 }
 a.collapsed::after {
-  color:#AC62D2 !important;
+  color: #ac62d2 !important;
 }
 a::after {
-  color:#AC62D2 !important;
+  color: #ac62d2 !important;
 }
 
-
 /* end */
-
-
 
 /* scrool down button */
 /* end */

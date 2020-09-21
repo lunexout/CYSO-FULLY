@@ -14,20 +14,16 @@ let usa_language = document.getElementById("usa_language");
 //   }
 // }
 
-
 // geo_language.addEventListener("click", language_change);
 // usa_language.addEventListener("click", language_change);
 
-
 function eng_index_html() {
-  window.open("eng_index.html" , "_self");
+  window.open("eng_index.html", "_self");
 }
 
 function geo_index_html() {
-  window.open("index.html" , "_self");
+  window.open("index.html", "_self");
 }
-// background javascript
-//end
 
 //partners
 //end
