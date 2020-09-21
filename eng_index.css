@@ -1,0 +1,395 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  scroll-behavior: smooth !important;
+}
+body {
+  background-color: white !important;
+}
+.main_navigation {
+  z-index: 2 !important;
+  height: 70px !important;
+  background-color: #202b61 !important;
+}
+div ul li a {
+  color: white !important;
+  font-family: "Montserrat", sans-serif !important;
+  /* font-family: "ALK Sanet" !important; */
+}
+div ul li a::before {
+  content: "" !important;
+  width: 0% !important;
+  height: 1px !important;
+  display: block !important;
+  background-color: white !important;
+}
+div ul li a:hover::before {
+  width: 100% !important;
+  transition: all 0.5s !important;
+}
+.icons {
+  font-size: 40px !important;
+  color: #025fb4 !important;
+}
+.icon_heading {
+  color: #4e54c8 !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: bolder;
+}
+.service_text {
+  color: #030302 !important;
+  font-family: "Montserrat", sans-serif !important;
+  /* font-family: "BPG Nino Mtavruli" !important; */
+  font-weight: bold !important;
+}
+
+@media only screen and (max-width: 992px) {
+  div ul li a {
+    color: #202b61 !important;
+  }
+}
+/* fonts */
+.navigation_names {
+    font-family: 'Nanum Gothic', sans-serif !important;
+    font-weight: bold;
+}
+
+/* background image and movable picture */
+.header_context {
+  margin-top: 200px !important;
+}
+.header_button {
+  background-color: white;
+  color: #202b61;
+  border: 1px solid #202b61;
+  border-radius: 10px;
+}
+.header_button:hover {
+  color: white;
+  background-color: #ac62d2;
+}
+.area {
+  background: #4e54c8;
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+  width: 100%;
+  height: 800px;
+}
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 700px;
+  margin-top: 60px;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+/* end */
+
+/* cards */
+.container1 .card {
+  position: relative;
+  cursor: pointer;
+  background-color: white;
+}
+
+.container1 .card .face {
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.container1 .card .face.face1 {
+  position: relative;
+  background: #202c61;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+
+  margin: auto !important;
+  width: 100% !important;
+  text-align: center !important;
+  border: none !important;
+}
+
+.container1 .card:hover .face.face1 {
+  background: #ac62d2;
+  transform: translateY(0);
+}
+
+.container1 .card .face.face1 .content {
+  /* opacity: 0.7; */
+  transition: 0.5s;
+}
+
+.container1 .card:hover .face.face1 .content {
+  opacity: 1;
+}
+
+.container1 .card .face.face1 .content img {
+  max-width: 100px;
+}
+
+.container1 .card .face.face1 .content h3 {
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.container1 .card .face.face2 {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
+  transform: translateY(-100px);
+
+  margin: auto !important;
+  width: 100% !important;
+  text-align: center !important;
+  border: none !important;
+}
+
+.container1 .card:hover .face.face2 {
+  transform: translateY(0);
+}
+
+.container1 .card .face.face2 .content p {
+  margin: 0;
+  padding: 0;
+}
+
+.container1 .card .face.face2 .content a {
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  padding: 5px;
+}
+
+.container .card .face.face2 .content a:hover {
+  background: #333;
+  color: #fff;
+}
+
+.card_button {
+  border: 1px solid #202b61 !important;
+  color: #202b61 !important;
+  background-color: white !important;
+}
+.card_button:hover {
+  background-color: #202b61 !important;
+  color: white !important;
+}
+
+/* end */
+/* partners */
+.logo_center {
+  margin: auto !important;
+  width: 100% !important;
+  text-align: center !important;
+  border: none !important;
+}
+/* end */
+
+/* contact */
+.name_text {
+  width: 100% !important;
+  border: 1px solid #202b61 !important;
+}
+.email_text {
+  width: 100% !important;
+  border: 1px solid #202b61 !important;
+}
+.contact_text {
+  width: 100% !important;
+  height: 170px !important;
+  border: 1px solid #202b61 !important;
+}
+.label_text {
+  font-family: "BPG Nino Mtavruli" !important;
+}
+/* end */
+
+/* footer */
+.gradient {
+  background-color: #202b61 !important;
+  background-image: linear-gradient(#202b61, #ac62d3) !important;
+}
+/* end */
+
+/* projects */
+.project_description {
+  font-family: "BPG Arial" !important;
+}
+.description_heading {
+  /* font-family: 'ALK Sanet' !important; */
+  font-family: 'Raleway' !important;
+  font-weight: bold !important;
+}
+/* end */
+
+/* products */
+
+/* h2 {
+  font-family: Arial, Verdana;
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: #091f2f;
+  text-transform: uppercase;
+} */
+.accordion-section .panel-default > .panel-heading {
+  border: 0;
+  background: #f4f4f4;
+  padding: 0;
+}
+.accordion-section .panel-default .panel-title a {
+  display: block;
+  font-size: 1.5rem;
+}
+.accordion-section .panel-default .panel-title a:after {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-size: 3rem;
+  content: "\f106";
+  color: #1f7de2;
+  float: right;
+  margin-top: -12px;
+}
+.accordion-section .panel-default .panel-title a.collapsed:after {
+  content: "\f107";
+}
+.accordion-section .panel-default .panel-body {
+  font-size: 1.2rem;
+}
+
+.collapsed {
+  text-decoration: none !important;
+  color:#293467 !important;
+}
+.panel-title a {
+  text-decoration: none !important;
+  color:#293467 !important;
+  font-family: 'Raleway', sans-serif !important; 
+}
+a.collapsed::after {
+  color:#AC62D2 !important;
+}
+a::after {
+  color:#AC62D2 !important;
+}
+
+
+/* end */
+
+
+
+/* scrool down button */
+/* end */
