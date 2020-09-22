@@ -13,10 +13,11 @@ function geo_index_html() {
 // scroll event
 
 window.onscroll = function(){
-  if(window.pageYOffset > 700){
+  if(window.pageYOffset > 600){
     document.getElementById('main_navigation').style.backgroundColor = "#202c61";
+    console.log(5);
   }
-  if(window.pageYOffset < 700){
+  if(window.pageYOffset == 0){
     document.getElementById('main_navigation').style.backgroundColor = "transparent";
   }
 }

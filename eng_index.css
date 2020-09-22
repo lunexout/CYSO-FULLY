@@ -8,10 +8,10 @@ html {
 body {
   background-color: white !important;
 }
-.main_navigation {
+#main_navigation {
   z-index: 2 !important;
   height: 70px !important;
-  background-color: transparent !important;
+  background-color: transparent;
 }
 div ul li a {
   color: white !important;
