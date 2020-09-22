@@ -54,8 +54,8 @@ div ul li a:hover::before {
 }
 /* fonts */
 .navigation_names {
-  font-family: "Nanum Gothic", sans-serif !important;
-  font-weight: bold;
+  font-family: 'Roboto Mono', monospace;
+  /* font-weight: bold; */
 }
 
 /* background image and movable picture */
@@ -217,7 +217,8 @@ div ul li a:hover::before {
 }
 
 .container1 .card:hover .face.face1 {
-  background: #ac62d2;
+  background: linear-gradient(172deg, rgba(2,0,36,1) 0%, rgba(21,51,133,1) 60%,
+   rgba(12,119,136,1) 61%, rgba(0,212,255,1) 100%) !important;
   transform: translateY(0);
 }
 
@@ -291,6 +292,10 @@ div ul li a:hover::before {
   background-color: #202b61 !important;
   color: white !important;
 }
+.project_card_button {
+  background-color: #202b61 !important;
+  color: white !important;
+}
 
 /* end */
 /* partners */
@@ -324,7 +329,9 @@ div ul li a:hover::before {
 /* footer */
 .gradient {
   background-color: #202b61 !important;
-  background-image: linear-gradient(#202b61, #ac62d3) !important;
+  /* background-image: linear-gradient(#202b61, #ac62d3) !important; */
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(21,51,133,1) 0%, rgba(32,44,97,1) 28%, rgba(0,157,102,1) 67%);
+
 }
 /* end */
 
@@ -390,6 +397,46 @@ a::after {
 }
 
 /* end */
+/* cards product */
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+h5.card-title {
+  position: absolute;
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+  font-weight: bolder;
+}
+.card-front {
+  transform: rotateY(0deg);
+  background-color: #202b61;
+}
 
-/* scrool down button */
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+}
+
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+  
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}
+/* end */
+
+
+/* card project font */
+h4.card-title {
+  font-family: "Rajdhani", sans-serif !important;
+  font-weight: bold;
+}
 /* end */

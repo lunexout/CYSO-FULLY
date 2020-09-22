@@ -21,3 +21,7 @@ window.onscroll = function(){
   }
 }
 //end scroll event
+
+// card carousel js
+
+// end card carousel
