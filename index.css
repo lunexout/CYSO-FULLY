@@ -11,12 +11,13 @@ body {
 .main_navigation {
   z-index: 2 !important;
   height: 70px !important;
-  background-color: #202b61 !important;
+  background-color: transparent !important;
 }
 div ul li a {
   color: white !important;
   /* font-family: "Montserrat", sans-serif !important; */
   font-family: "ALK Sanet" !important;
+  background-color: transparent !important;
 }
 div ul li a::before {
   content: "" !important;
@@ -47,7 +48,7 @@ div ul li a:hover::before {
 
 @media only screen and (max-width: 992px) {
   div ul li a {
-    color: #202b61 !important;
+    text-align: center;
   }
 }
 
@@ -87,7 +88,7 @@ div ul li a:hover::before {
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  /* background: rgba(255, 255, 255, 0.2); */
   animation: animate 25s linear infinite;
   bottom: -150px;
 }
@@ -383,7 +384,5 @@ a::after {
 }
 
 /* end */
-
-/* background */
 
 /* end */
