@@ -9,16 +9,20 @@ function geo_index_html() {
   window.open("index.html", "_self");
 }
 
-
 // scroll event
 
-window.onscroll = function(){
-  if(window.pageYOffset > 600){
-    document.getElementById('main_navigation').style.backgroundColor = "#202c61";
-    console.log(5);
+window.onscroll = function () {
+  if (window.pageYOffset > 400) {
+    document.getElementById("main_navigation").style.backgroundColor =
+      "#202c61";
+    document.getElementById("navigation_items").style.backgroundColor =
+      "#202c61";
   }
-  if(window.pageYOffset == 0){
-    document.getElementById('main_navigation').style.backgroundColor = "transparent";
+  if (window.pageYOffset < 400) {
+    document.getElementById("main_navigation").style.backgroundColor =
+      "transparent";
+    document.getElementById("navigation_items").style.backgroundColor =
+      "transparent";
   }
-}
+};
 //end scroll event

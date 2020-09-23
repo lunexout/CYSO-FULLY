@@ -9,17 +9,22 @@ function geo_index_html() {
   window.open("index.html", "_self");
 }
 
-
 // scroll event
 
-window.onscroll = function(){
-  if(window.pageYOffset > 700){
-    document.getElementById('main_navigation').style.backgroundColor = "#202c61";
+window.onscroll = function () {
+  if (window.pageYOffset > 400) {
+    document.getElementById("main_navigation").style.backgroundColor =
+      "#202c61";
+    document.getElementById("navigation_items").style.backgroundColor =
+      "#202c61";
   }
-  if(window.pageYOffset < 700){
-    document.getElementById('main_navigation').style.backgroundColor = "transparent";
+  if (window.pageYOffset < 400) {
+    document.getElementById("main_navigation").style.backgroundColor =
+      "transparent";
+    document.getElementById("navigation_items").style.backgroundColor =
+      "transparent";
   }
-}
+};
 //end scroll event
 
 // card carousel js

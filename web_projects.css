@@ -1,0 +1,83 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  scroll-behavior: smooth !important;
+}
+body {
+  background-color: white !important;
+}
+#main_navigation {
+  z-index: 2 !important;
+  height: 70px !important;
+  background-color: #202c61;
+}
+div ul li a {
+  color: white !important;
+  /* font-family: "Montserrat", sans-serif !important; */
+  font-family: "ALK Sanet" !important;
+  background-color: #202b61 !important;
+}
+div ul li a::before {
+  content: "" !important;
+  width: 0% !important;
+  height: 1px !important;
+  display: block !important;
+  background-color: white !important;
+}
+div ul li a:hover::before {
+  width: 100% !important;
+  transition: all 0.5s !important;
+}
+
+/* footer */
+.gradient {
+  background-color: #202b61 !important;
+  background-image: linear-gradient(#202b61, #ac62d3) !important;
+  /* background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(21,51,133,1) 0%, rgba(32,44,97,1) 28%, rgba(0,157,102,1) 67%); */
+}
+/* end */
+
+/* projects */
+.project_description {
+  font-family: "BPG Arial" !important;
+}
+.description_heading {
+  font-family: "ALK Sanet" !important;
+  font-weight: bold !important;
+}
+/* end */
+.project_picture {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.project_picture:hover {
+  filter: blur(3px);
+}
+.text {
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
